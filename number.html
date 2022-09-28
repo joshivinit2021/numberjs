@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>number properties: <br></p>
+    
+    <p id="tostring"></p>
+    <p id="tofixed"></p>
+    <p id="toPrecision"></p>
+    <p id="tonumber"></p>
+    <p id="parseint"></p>
+    <p id="parsefloat"></p>
+    
+    
+    <script>
+        let x=5.356;
+        let y="6.325";
+        document.getElementById("tostring").innerHTML="<p>tostring:</p>"+x.toString();
+        document.getElementById("tofixed").innerHTML="<p>tofixed:</p>"+x.toFixed(2);
+        document.getElementById("toPrecision").innerHTML="<p>toPrecision:</p>"+x.toPrecision(2);
+        document.getElementById("tonumber").innerHTML="<p>tonumber:</p>"+Number(y);
+        document.getElementById("parseint").innerHTML="<p>parseint:</p>"+parseInt("-20");
+        document.getElementById("parsefloat").innerHTML="<p>parsefloat:</p>"+parseFloat("-20.55");
+    </script>
+</body>
+</html>
